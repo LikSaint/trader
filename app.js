@@ -8,9 +8,9 @@ function renderDiagrams() {
     var usual = 5;
     var recommended = 11;
 
-    add_chart(getRandomInt(4, 30), getRandomInt(4, 30), "day");
-    add_chart(getRandomInt(4, 30), getRandomInt(4, 30), "week");
-    add_chart(getRandomInt(4, 30), getRandomInt(4, 30), "month")
+    add_chart(getRandomInt(4, 50), getRandomInt(4, 20), "day");
+    add_chart(getRandomInt(4, 60), getRandomInt(4, 60), "week");
+    add_chart(getRandomInt(4, 40), getRandomInt(4, 10), "month")
 }
 
 function add_chart(usual, recommended, canvasTagsId) {
@@ -133,8 +133,7 @@ function createHistogramElem(usual,recommended,date, day, selected){
 /*
 function jsonSearch(){
     $.getJSON('./data.json', function(data) {
-        alert(data[0]);
 
-    });;
+    });
 }
-    */
+*/
