@@ -1,5 +1,5 @@
 window.onload = function() {
-    jsonSearch();
+    //jsonSearch();
     renderDiagrams();
     renderHistograms();
 }
@@ -7,9 +7,10 @@ window.onload = function() {
 function renderDiagrams() {
     var usual = 5;
     var recommended = 11;
-    add_chart(usual, recommended, "day");
-    add_chart(usual, recommended, "week");
-    add_chart(usual, recommended, "month");
+
+    add_chart(getRandomInt(4, 30), getRandomInt(4, 30), "day");
+    add_chart(getRandomInt(4, 30), getRandomInt(4, 30), "week");
+    add_chart(getRandomInt(4, 30), getRandomInt(4, 30), "month")
 }
 
 function add_chart(usual, recommended, canvasTagsId) {
@@ -75,24 +76,24 @@ function add_chart(usual, recommended, canvasTagsId) {
 }
 
 function renderHistograms(){
-    var usual = 11;
-    var recommended = 15;
-    var date = "10 апр";
-    createHistogramElem(usual+35, recommended+45,date, "day"+ 1);
-    createHistogramElem(usual+35, recommended+83,date, "day"+ 2);
-    createHistogramElem(usual+134, recommended+23,date, "day"+ 3);
-    createHistogramElem(usual+54, recommended+111,date, "day"+ 4);
-    createHistogramElem(usual+35, recommended+83,date, "day"+ 5);
-    createHistogramElem(usual+54, recommended+73,date, "day"+ 6);
-    createHistogramElem(usual+31, recommended+33,date, "day"+ 7);
-    createHistogramElem(usual+68, recommended+54,date, "day"+ 8, true);
-    createHistogramElem(usual+33, recommended,date, "day"+ 9);
-    createHistogramElem(usual+73, recommended+54,date, "day"+ 10);
-    createHistogramElem(usual+83, recommended,date, "day"+ 11);
-    createHistogramElem(usual+111, recommended+134,date, "day"+ 12);
-    createHistogramElem(usual+23, recommended+35,date, "day"+ 13);
-    createHistogramElem(usual+83, recommended+54,date, "day"+ 14);
+    var date = 1;
+    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
+    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
+    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
+    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
+    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
+    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
+    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
+    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
+    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
+    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
+    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
+    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
+    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
+    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
 }
+function getRandomInt(min, max){return Math.floor(Math.random() * (max - min + 1)) + min;}
+
 
 function createHistogramElem(usual,recommended,date, day, selected){
     var histogramsBottom = document.getElementById("histograms-bottom");
@@ -129,7 +130,11 @@ function createHistogramElem(usual,recommended,date, day, selected){
     }
 }
 
+/*
 function jsonSearch(){
-    $.getJSON('./data.json', function(data) {console.log(data)});
+    $.getJSON('./data.json', function(data) {
+        alert(data[0]);
 
+    });;
 }
+    */

@@ -41,7 +41,7 @@
                 fix = function(a) {
                     return a.toFixed(2) + " grn"
                 },
-                obj = {'timestamp' : function(a) {
+                object = {'timestamp' : function(a) {
                     return new Date(a*1000).toLocaleDateString()
                 },
                     'total' : fix,
@@ -51,7 +51,7 @@
         ordersList.forEach(function(c, b) {
             var d = tbody.insertRow(b);
             arr.forEach(function(a, b) {
-                d.insertCell(b).innerHTML = obj[a] ? obj[a](c[a]) : c[a]
+                d.insertCell(b).innerHTML = object[a] ? object[a](c[a]) : c[a]
             })
         });
 
