@@ -8,9 +8,9 @@ function renderDiagrams() {
     var usual = 5;
     var recommended = 11;
 
-    add_chart(getRandomInt(4, 50), getRandomInt(4, 20), "day");
-    add_chart(getRandomInt(4, 60), getRandomInt(4, 60), "week");
-    add_chart(getRandomInt(4, 40), getRandomInt(4, 10), "month")
+    add_chart(getRandomInt(4, 20), getRandomInt(4, 20), "day");
+    add_chart(getRandomInt(4, 25), getRandomInt(4, 25), "week");
+    add_chart(getRandomInt(4, 20), getRandomInt(4, 20), "month")
 }
 
 function add_chart(usual, recommended, canvasTagsId) {
@@ -77,20 +77,10 @@ function add_chart(usual, recommended, canvasTagsId) {
 
 function renderHistograms(){
     var date = 1;
-    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
-    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
-    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
-    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
-    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
-    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
-    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
-    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
-    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
-    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
-    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
-    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
-    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
-    createHistogramElem(getRandomInt(30, 180), getRandomInt(30, 180),date++ + " апр", date);
+    for (var i = 1; i <= 14; i++){
+
+        createHistogramElem(getRandomInt(60, 120), getRandomInt(0, 60), date++ + " апр", date);
+    }
 }
 function getRandomInt(min, max){return Math.floor(Math.random() * (max - min + 1)) + min;}
 
@@ -126,7 +116,7 @@ function createHistogramElem(usual,recommended,date, day, selected){
         context.fillRect(9, usual,5, 190);
 
         context.fillStyle = "#00aeef";
-        context.fillRect(17, recommended,5, 190);
+        context.fillRect(17, usual-recommended,5, 190);
     }
 }
 

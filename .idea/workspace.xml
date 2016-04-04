@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bb56655-346d-4b46-9f63-8ee73dedfe38" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Gear.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheet/временный.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.json" afterPath="$PROJECT_DIR$/data.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
     </list>
     <ignored path="Graphics.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,8 +59,8 @@
           <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0317757">
-                  <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+                <state vertical-scroll-proportion="0.40316206">
+                  <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
                   <folding />
                 </state>
               </provider>
@@ -113,7 +106,7 @@
                 <state vertical-scroll-proportion="0.0">
                   <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
                   <folding>
-                    <marker date="1459759947231" expanded="true" signature="5032:5114" placeholder="{...}" />
+                    <marker date="1459761305904" expanded="true" signature="3874:3931" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -307,7 +300,19 @@
       <option name="project" value="LOCAL" />
       <updated>1459755561812</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added random generator">
+      <created>1459760030742</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1459760030742</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Исправлены некоторые ошибки">
+      <created>1459760273867</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1459760273867</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -355,7 +360,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added gh-pages branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added gh-pages branch" />
+    <MESSAGE value="Added random generator" />
+    <MESSAGE value="Исправлены некоторые ошибки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлены некоторые ошибки" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -533,8 +540,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0317757">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.40316206">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
           <folding />
         </state>
       </provider>
