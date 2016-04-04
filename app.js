@@ -5,9 +5,6 @@ window.onload = function() {
 }
 
 function renderDiagrams() {
-    var usual = 5;
-    var recommended = 11;
-
     add_chart(getRandomInt(4, 20), getRandomInt(4, 20), "day");
     add_chart(getRandomInt(4, 25), getRandomInt(4, 25), "week");
     add_chart(getRandomInt(4, 20), getRandomInt(4, 20), "month")
@@ -78,20 +75,19 @@ function add_chart(usual, recommended, canvasTagsId) {
 function renderHistograms(){
     var date = 1;
     for (var i = 1; i <= 14; i++){
-
-        createHistogramElem(getRandomInt(60, 120), getRandomInt(0, 60), date++ + " апр", date);
+        createHistogramElem(getRandomInt(60, 120), getRandomInt(0, 60), date++ + " апр", date,i==8);
     }
 }
+
 function getRandomInt(min, max){return Math.floor(Math.random() * (max - min + 1)) + min;}
 
-
-function createHistogramElem(usual,recommended,date, day, selected){
+function createHistogramElem(usual,recommended,date, day, targetElement){
     var histogramsBottom = document.getElementById("histograms-bottom");
 
     // Основной блок элемента
     var div = document.createElement("div");
     div.classList.add("histogramElem-box");
-    if (selected){div.classList.add("histogramElem-box-selected");}
+    if (targetElement){div.classList.add("histogramElem-box-selected");}
 
 
     // Вывод элемента гистограммы
