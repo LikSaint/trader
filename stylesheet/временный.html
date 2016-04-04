@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Untitled</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Дата</th>
+        <th>№ заказа</th>
+        <th>ID покупателя</th>
+        <th>Общая сумма</th>
+        <th>Обычные продажи</th>
+        <th>Рекомендованные продажи</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    </tbody>
+</table>
+
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        var table = document.querySelector('table'),
+                tbody = table.querySelector('tbody')
+        ordersList = [
+            {id: 5070992, user_id: 29073781, timestamp: 1435092870, total: 1714, recommended: 0, typical: 1714 },
+            {id: 5070993, user_id: 33963628, timestamp: 1435092881, total: 10290, recommended: 0, typical: 10290 },
+            {id: 5070994, user_id: 33963648, timestamp: 1435092882, total: 2427, recommended: 0, typical: 2427 },
+            {id: 5070996, user_id: 33963559, timestamp: 1435092974, total: 1299, recommended: 0, typical: 1299 },
+            {id: 5070998, user_id: 33963814, timestamp: 1435093028, total: 2090, recommended: 0, typical: 2090 },
+            {id: 5071000, user_id: 33963819, timestamp: 1435093041, total: 16440, recommended: 0, typical: 16440 },
+            {id: 5071001, user_id: 33963837, timestamp: 1435093047, total: 5800, recommended: 0, typical: 5800 },
+            {id: 5071003, user_id: 33964044, timestamp: 1435093060, total: 5115, recommended: 0, typical: 5115 }],
+                arr = ['timestamp', 'id', 'user_id', 'total', 'typical','recommended'],
+                fix = function(a) {
+                    return a.toFixed(2) + " grn"
+                },
+                obj = {'timestamp' : function(a) {
+                    return new Date(a*1000).toLocaleDateString()
+                },
+                    'total' : fix,
+                    'typical' : fix,
+                    'recommended' : fix
+                };
+        ordersList.forEach(function(c, b) {
+            var d = tbody.insertRow(b);
+            arr.forEach(function(a, b) {
+                d.insertCell(b).innerHTML = obj[a] ? obj[a](c[a]) : c[a]
+            })
+        });
+
+    });
+</script>
+</body>
+
+</html>

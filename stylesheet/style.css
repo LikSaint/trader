@@ -1,0 +1,244 @@
+@import url(reset.css);
+
+body{
+    color: #fff;
+    min-height: 100%;
+    background-color: #0e181e;
+    font: 12px Arial;
+}
+
+p{
+    font-size: 12px;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    font-size:12px;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: rgba(61, 245, 255, 0.65);
+    font-size:12px;
+}
+
+#warpper{
+     margin: 0 auto;
+ }
+
+.gear {
+    height: 20px;
+    width: 20px;
+}
+
+.menu-verification {
+    margin-top: 20px;
+    float: right;
+}
+
+.menu-verification * {
+    vertical-align: middle;
+    margin-right: 22px;
+}
+
+.menu-verification *:last-child {margin-right: 0px;}
+
+.menu-logo {
+    margin-top: 10px;
+    float: left;
+}
+
+.menu-logo span {
+    text-transform: uppercase;
+    font-size: 9.98px;
+}
+
+.top{
+    background-color: #0a1216;
+    height: 60px;
+}
+
+.menu {
+    margin:0 auto;
+    width: 1000px;
+}
+
+.mainContainer{
+    padding-top: 80px;
+    margin:0 auto;
+    width: 1000px;
+}
+
+.mainInfo{
+
+}
+
+.mainInfo-top{
+    height: 320px;
+    background-color: #203541;
+}
+.diagrams{
+    margin-left: 20px;
+    margin-right: 20px;
+    float:left;
+    width: 360px;
+}
+
+.diagrams-top{
+    height: 73px;
+    text-align: center;
+    padding-top: 25px;
+}
+.diagrams-top span{
+    text-transform: uppercase;
+}
+.diagrams-top hr{
+    margin-top: 20px;
+    border: none;
+    color: #2b3f4b;
+    background-color: #2b3f4b;
+    padding-bottom: 1px;
+    border-bottom:1px solid #182933;
+}
+.diagrams-bottom > span{
+    font-family: 'Roboto Regular', arial;
+    font-size: 9px;
+    color: #949494;
+    margin-left: 20px;
+
+}
+.diagrams-bottom div {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    float: left;
+    width: 100px;
+    height:100px;
+}
+.histograms{
+    float: right;
+    width: 550px;
+    height:320px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.histograms-top{
+    height: 45px;
+    text-align: center;
+    padding-top: 25px;
+    text-transform: uppercase;
+}
+.histograms-top > span{
+
+ }
+.histograms-top hr{
+    margin-top: 20px;
+    border: none;
+    color: #2b3f4b;
+    background-color: #2b3f4b;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #182933;
+}
+
+.histogramElem-box{
+    margin-left: 8px;
+    float: left;
+    height: 230px;
+    width: 30px;
+    font-size: 9px;
+}
+.histogramElem-box-selected {
+    background-color: #1a2a34;
+    color:#00aeef;
+}
+
+.histogramElem-box-top{
+    height: 211px;
+    width: 30px;
+}
+.histogramElem-box-bottom{
+    height: 19px;
+    width: 30px;
+}
+.mainInfo-bottom{
+    height: 40px;
+    background-color: #182933;
+}
+
+.mainInfo-bottom *{
+    float: left;
+    margin-right: 20px;
+    margin-top: 14px;
+    margin-left: 20px;
+    font-family: 'Roboto Regular', arial;
+    font-size: 9px;
+    color: #949494;
+}
+
+.recommended-square {
+    float: left;
+    width: 11px;
+    height: 11px;
+    background-color: #00aeef;
+    border: 1px solid #949494;
+    margin-right: -15px;
+}
+
+.usual-square {
+    float: left;
+    width: 11px;
+    height: 11px;
+    background-color: #fff;
+    border: 1px solid #949494;
+    margin-right: -15px;
+}
+
+
+
+
+
+
+.intervalChanger{
+    float:right;
+    cursor: default;
+}
+.intervalChanger-triangle {
+    margin: 3px;
+    float: right;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid white;
+}
+#intervalChanger-list {
+    position: absolute;
+    width: 150px;
+    top: 37px;
+    left:-9999px;
+    opacity: 0;
+    -webkit-transition: 0.25s linear opacity;
+}
+#intervalChanger-list li{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    background-color: #203541;
+    width: 90px;
+    text-align: left;
+}
+#intervalChanger-list li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.intervalChanger:hover > #intervalChanger-list{
+    left: 1023px;
+    top: 179px;
+    opacity: 1;
+}
+
+

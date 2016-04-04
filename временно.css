@@ -1,0 +1,144 @@
+@import url(reset.css);
+
+body{
+    color: #fff;
+    min-height: 100%;
+    background-color: #0e181e;
+    font: 12px Arial;
+}
+p{
+    font-size: 12px;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    font-size:12px;
+}
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: rgba(61, 245, 255, 0.65);
+    font-size:12px;
+}
+#warpper{
+     margin: 0 auto;
+ }
+.gear {
+    height: 20px;
+    width: 20px;
+}
+.menu-verification {
+    margin-top: 20px;
+    float: right;
+}
+.menu-verification * {
+    vertical-align: middle;
+    margin-right: 22px;
+}
+.menu-verification *:last-child {margin-right: 0px;}
+
+.menu-logo {
+    margin-top: 10px;
+    float: left;
+}
+.menu-logo span {
+    text-transform: uppercase;
+    font-size: 9.98px;
+}
+
+.top{
+    background-color: #0a1216;
+    height: 60px;
+}
+.menu {
+    margin:0 auto;
+    width: 1000px;
+}
+.mainContainer{
+    padding-top: 80px;
+    margin:0 auto;
+    width: 1000px;
+}
+.mainInfo{
+    background-color: #203541;
+}
+.mainInfo-bottom{
+    height: 40px;
+    background-color: #182933;
+}
+.mainInfo-bottom > *{
+    vertical-align: middle;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.recommended * {
+
+}
+
+
+.recommended .square {
+    float: left;
+    width: 11px;
+    height: 11px;
+    background-color: #00aeef;
+    border: 1px solid #949494;
+    margin-right: 5px;
+}
+.usual * {
+
+}
+.usual .square {
+    float: left;
+    width: 11px;
+    height: 11px;
+    background-color: #fff;
+    border: 1px solid #949494;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#header{
+    height: 559px;
+}
+#headerTop{
+    height: 104px;
+}
+#sliderBox{
+    height: 455px;
+}
+#headerFirmName {
+    float: left;
+    margin: 39px 0 10px 54px;
+    font-family: MyriadProSemibold;
+}
+#headText {
+    float: left;
+    font-size: 27px;
+    margin: 55px auto 5px 20px;
+}
+#phoneBox {
+    float: right;
+    margin: 0px 58px 0 0;
+}
+#phone {
+    display: block;
+    float: right;
+}
+#headPhoneNumber {
+    float: right;
+    margin: 10px 0 10px 0;
+    font-family: MyriadProBold;
+}
